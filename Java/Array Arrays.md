@@ -1,4 +1,4 @@
-### Array 배열
+## Array 배열
 
 배열은 같은 타입의 데이터를 연속된 공간에 나열시키고 각 데이터에 인덱스(index)를 부여해 놓은 자료구조로, 한 번 생성하면 그 길이를 변경할 수 없다.
 
@@ -107,7 +107,7 @@ System.out.println(Arrays.deepToString(arr2));  //[[1, 2, 3, 4, 5], [5, 4, 3, 2,
 
 ---
 
-### java.util.Arrays 클래스
+## java.util.Arrays 클래스
 배열을 다루기 위해 유용한 메소드를 포함한 클래스로 java.util.Arrays를 import 해줘야 사용 가능하다.
 
 Arrays 클래스의 모든 메소드는 Static method이므로, 객체를 생성하지 않고 바로 사용할 수 있다.
