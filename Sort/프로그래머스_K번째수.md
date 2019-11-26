@@ -54,3 +54,16 @@ class Solution {
     }
 }
 ```
+---
+### Solutions
+
+by. haspberry
+
+```python3
+def solution(numbers):
+    answer = ''
+    numbers_temp = list((map(str, numbers)))
+    numbers_temp.sort(key=lambda x : x*3, reverse=True)
+    numbers_temp = str(int(''.join(numbers_temp)))
+    return numbers_temp
+```
