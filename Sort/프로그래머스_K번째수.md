@@ -67,3 +67,22 @@ def solution(numbers):
     numbers_temp = str(int(''.join(numbers_temp)))
     return numbers_temp
 ```
+---
+### Solutions
+
+by. korea1782
+
+```python3
+def solution1(array, commands):
+    answer = []
+    while(len(commands) != 0):
+        temp = []
+        temp = array[commands[0][0]-1:commands[0][1]]
+        temp.sort()
+        answer.append(temp[commands[0][2]-1])
+        del commands[0]
+    return answer
+
+def solution2(array, commands):
+    return list(map(lambda x:sorted(array[x[0]-1:x[1]])[x[2]-1], commands))
+```
