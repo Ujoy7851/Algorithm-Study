@@ -103,7 +103,7 @@ System.out.println(Arrays.deepToString(arr2));  //[[1, 2, 3, 4, 5], [5, 4, 3, 2,
 
 #### 배열 정렬
 - 오름차순 : Arrays.sort(arr);
-- 내림차순: Arrays.sort(arr, Comparator.reverseOrder());
+- 내림차순: Arrays.sort(arr, Collections.reverseOrder());
 
 ---
 
