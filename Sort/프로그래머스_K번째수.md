@@ -86,3 +86,33 @@ def solution1(array, commands):
 def solution2(array, commands):
     return list(map(lambda x:sorted(array[x[0]-1:x[1]])[x[2]-1], commands))
 ```
+---
+### Solutions
+
+by. dokoala
+
+```java
+import java.util.ArrayList;
+import java.util.Arrays;
+
+class Solution {
+    public int[] solution(int[] array, int[][] commands) {
+	        int[] answer = new int[commands.length];
+	        for(int i = 0; i<commands.length;i++)
+	        {
+	        	if(commands[i][0]!=commands[i][1])
+	        	{	        		
+	        		int[] copy = Arrays.copyOfRange(array, (commands[i][0]-1), (commands[i][1]));
+	        		Arrays.sort(copy);
+		        	answer[i] = copy[commands[i][2]-1];        
+	        	}
+	        	else
+	        	{
+	        		answer[i] = array[commands[i][0]-1];
+	        	}
+	        	
+	        }
+	        return answer;
+	    }
+}
+```
