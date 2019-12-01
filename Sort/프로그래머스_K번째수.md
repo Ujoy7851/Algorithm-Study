@@ -92,7 +92,6 @@ def solution2(array, commands):
 by. dokoala
 
 ```java
-import java.util.ArrayList;
 import java.util.Arrays;
 
 class Solution {
