@@ -51,3 +51,42 @@ class Solution {
     }
 }
 ```
+---
+### Solutions
+
+by. dokoala
+```java
+import java.util.Arrays;
+
+class Solution {
+    public int solution(int[] citations) {
+	        int answer = 0;
+	        int count;
+	        int[] citations2 = new int[citations.length];
+	        
+	        Arrays.sort(citations);
+	        
+	        for(int y = citations.length-1; y >= 0; y--)
+	        	citations2[citations.length -1-y] = citations[y];
+	        
+	        for(int i=0;i<citations2.length;i++)
+	        {
+	        	count = 0;
+	        	for(int j=0;j<citations2.length;j++)
+		        {
+		        	if(citations2[i]<=citations2[j])
+		        	{
+		        		count++;
+		        	}
+		        }	        	
+	        	if(citations2[i]>=count)
+	        	{	        		
+		        	
+	        		answer = count;
+	        	}
+	        	
+	        }	        
+	        return answer;
+	    }
+}
+```
