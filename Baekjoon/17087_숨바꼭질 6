@@ -1,0 +1,23 @@
+by. haspberry
+```python3
+##python3
+import sys
+def gcd(n, m):
+    while (m != 0):
+        n, m = m, n % m
+    return n
+
+
+N, S = map(int, sys.stdin.readline().split())
+A = sys.stdin.readline().split()
+print(A)
+
+for i in range(N):
+    A[i] = abs(S-int(A[i]))
+
+answer = A[0]
+for i in range(N-1):
+    answer = gcd(answer, A[i+1])
+
+print(answer)
+```
