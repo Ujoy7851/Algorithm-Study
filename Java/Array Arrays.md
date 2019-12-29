@@ -54,7 +54,7 @@ System.out.println(odds.length);  //5
 
 ```java
 int[] arr = new int[]{1, 2, 3, 4, 5};
-for (int e : arr2) {
+for (int e : arr) {
     e += 10;
 }
 //{1, 2, 3, 4, 5}
